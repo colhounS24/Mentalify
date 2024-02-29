@@ -1,0 +1,123 @@
+/* Brain.css */
+.container1 {
+    position: relative;
+    width: 50%;
+    /* Adjust the width as needed */
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    
+    
+}
+
+.brain {
+    width: 100%;
+    /* Ensure the image takes up the entire width of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container's width */
+    
+    display: block;
+    z-index: -1;
+}
+
+.squaresContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+.squareBox {
+    height: 5%;
+    width:  5%;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle; 
+    border: 2px solid black;
+    border-radius: 25%;
+    z-index: 1;
+    
+}
+
+.squareBox:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 1;
+}
+
+#square1{
+    left: 30%;
+    top: 37%;
+    background-color: cyan;
+    z-index: 1;
+}
+
+#square2{
+    left: 60%;
+    top: 30%;
+    background-color: magenta;
+    z-index: 1;
+}
+
+#square3{
+    left: 52.5%;
+    top: 52.5%;
+    background-color: yellow;
+    z-index: 1;
+}
+
+#square4{
+    left: 73%;
+    top: 48%;
+    background-color: lime;
+    z-index: 1;
+}
+
+#square5{
+    left: 60%;
+    top: 70%;
+    background-color: crimson;
+    z-index: 1;
+}
+
+#square6{
+    left: 51.5%;
+    top: 80%;
+    background-color: navy;
+    z-index: 1;
+}
+
+.explainDiv {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 40%;
+    
+    z-index: 9999;
+    /* Set a higher value to bring it to the front */
+    margin: 0 auto;
+    bottom: 50%;
+    text-align: center;
+    border: solid 2px;
+    opacity: 1;
+}
+
+.explainDiv:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.4s;
+    filter:brightness(80%)
+
+}
+
+
+
+.headingExplain{
+    font-style:italic;
+    
+}

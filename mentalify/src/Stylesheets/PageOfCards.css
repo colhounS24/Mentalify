@@ -1,0 +1,136 @@
+.card-container1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 40px;
+}
+
+.card1 {
+    flex: 1;
+    min-height: 70vh;
+    /* Adjust the height as needed */
+    display: flex;
+    flex-direction: row;
+   
+    overflow: hidden;
+    /* Ensure content doesn't overflow */
+}
+
+#cardEducational {
+    flex: 1;
+    background-image: url(../assets/pexels-pixabay-159711.jpg);
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the image */
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+}
+
+#cardTraining{
+    flex: 1;
+        background-image: url(../assets/pexels-victor-freitas-949130.jpg);
+        background-size: cover;
+        /* Cover the entire container */
+        background-position: center;
+        /* Center the image */
+        display: flex;
+        flex-direction: column;
+        transition: .2s;
+}
+
+#cardMulti {
+    flex: 1;
+    background-image: url(../assets/pexels-pixabay-278918.jpg);
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the image */
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+}
+
+#cardMulti:hover {
+    transform: scale(1.25);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+    filter: grayscale(50%);
+    
+}
+
+#cardEducational:hover {
+    transform: scale(1.25);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+    filter: grayscale(50%);
+
+}
+
+#cardTraining:hover {
+    transform: scale(1.25);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+    filter: grayscale(50%);
+
+}
+
+.card-headings:hover {
+    cursor: pointer;
+    background-color: gold;
+    transform: scale(1.15);
+
+}
+
+.card-body1 {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    /* Center align the text */
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+}
+
+.card-headings {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 0.25rem;
+    
+}
+
+#title1-bg{
+    background-color: rgba(255, 255, 255, 0.45);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    
+    max-width:fit-content;
+        /* Adjust the width as needed */
+        margin: 0 auto;
+        /* Center the div horizontally */
+        padding: 20px;
+        border-radius: 0.25rem;
+
+}
+
+#homeTitle{
+    font-weight: 500;
+}
+
+#homeName{
+    font-weight: 350;
+}

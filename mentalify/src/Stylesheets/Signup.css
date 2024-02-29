@@ -1,0 +1,30 @@
+.contentSep{
+    
+    padding : 2rem;
+    border-radius: 2%;
+    background-color: rgb(194,221, 221);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
+    
+    
+    
+
+}
+
+.Headings{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.Smaller{
+    font-size: smaller;
+    font-style: italic;
+}
+
+.passwordCont{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}

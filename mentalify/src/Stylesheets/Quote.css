@@ -1,0 +1,13 @@
+.card {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    
+    
+    /* Adjust the padding as needed */
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    /* Adjust the color and transparency as needed */
+    border-radius: 10px;
+}

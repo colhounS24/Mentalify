@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(163, 231, 231), rgb(137, 137, 137));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.footer--pin {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.content-container {
+    min-height: calc(100vh - 80px);
+}

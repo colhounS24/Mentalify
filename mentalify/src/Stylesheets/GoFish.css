@@ -1,0 +1,73 @@
+/* GoFish.css */
+
+
+.front {
+    width: 50%;
+    height: auto;
+    /* Maintain aspect ratio */
+    background: linear-gradient(to bottom, rgb(117, 221, 235), rgb(205, 242, 248));
+        background-repeat: no-repeat;
+        border: 0.1rem solid;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.back {
+    width: 50%;
+    height: auto;
+    border: 0.1rem solid;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+#newGame{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+/* GoFish.css */
+
+#wholeContainer {
+    margin: 0 auto;
+    text-align: center;
+    /* Align content in the center */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    gap: 1rem;
+}
+#para{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+#para > p {
+    padding: 0;
+    margin: 0.2rem;
+}
+
+#gameContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-grid {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Use repeat to define columns */
+    justify-content: center;
+    /* Center grid horizontally */
+    /* Remove padding */
+    margin: 0 auto;
+    /* Center grid horizontally */
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    /* Remove gap between columns */
+}

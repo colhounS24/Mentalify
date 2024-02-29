@@ -1,0 +1,43 @@
+#mapContainerFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Align children vertically */
+    justify-content: center;
+    /* Align children horizontally */
+    margin: 2rem;
+    padding: 2rem;
+    height: 28rem;
+ 
+    gap: 1rem;
+    /* Ensure the container takes full height */
+   
+}
+
+#titleMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Align children vertically */
+    justify-content: center;
+    /* Align children horizontally */
+    height: 100%;
+    /* Ensure the container takes full height */
+    width: 40%;
+    /* Ensure the container takes full width */
+}
+
+#treatmentText {
+    background: linear-gradient(to bottom, rgb(117, 221, 235), rgb(205, 242, 248));
+        background-repeat: no-repeat;
+        
+    
+   
+    /* Add margin between titleMap and treatmentText */
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+        /* Enable scrolling */
+        padding: 0.25rem
+}

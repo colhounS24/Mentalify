@@ -1,0 +1,33 @@
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Adjust values as needed */
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Adjust the color and transparency as needed */
+    /* Adjust the padding as needed */
+    border-radius: 10px;
+}
+
+.custom-carousel-image {
+    width: 75%;
+    /* Set the desired width, making the images 20% smaller */
+    max-width: 75%;
+    /* Ensure images do not exceed their original size */
+    height: auto;
+    /* Maintain the aspect ratio */
+    margin: 0 auto;
+    /* Center the image within the container */
+}
+
+
+
+#carouselExample{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}

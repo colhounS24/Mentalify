@@ -1,0 +1,36 @@
+#formCont {
+    min-height: calc(100vh - 84px);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: larger;
+    gap: 30px;
+    width: 100%;
+}
+
+#Buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.footer--pin1 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.boxSize{
+    width: 100%;
+}
+
+
+.form-label{
+    width: 100%;
+}
