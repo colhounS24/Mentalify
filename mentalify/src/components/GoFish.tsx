@@ -9,6 +9,8 @@ import card4 from "../assets/—Pngtree—fruit_game_icon_png_8362133-transforme
 import card5 from "../assets/—Pngtree—fruit_game_icon_png_8362133-transformed_5.png";
 import card6 from "../assets/—Pngtree—fruit_game_icon_png_8362133-transformed_6.png";
 
+var checker = 0;
+
 interface Card {
   src: string;
   id: number;
@@ -38,27 +40,30 @@ function GoFish() {
 
   const checkHighScore = async () => {
     try {
-      const highscore = turns;
+      console.log(checker);
+      if (checker === 6) {
+        const highscore = turns;
 
-      const userString = localStorage.getItem("user");
-      if (userString === null) {
-        throw new Error("User not found in localStorage");
-      }
-      const user = JSON.parse(userString);
-      console;
+        const userString = localStorage.getItem("user");
+        if (userString === null) {
+          throw new Error("User not found in localStorage");
+        }
+        const user = JSON.parse(userString);
+        console;
 
-      const response = await fetch("http://localhost:5000/api/highscore", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ highScore: highscore, email: user?.email }), // Assuming user object has an email property
-      });
+        const response = await fetch("http://localhost:5000/api/highscore", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ highScore: highscore, email: user?.email }), // Assuming user object has an email property
+        });
 
-      if (response.ok) {
-        console.log("Success");
-      } else {
-        console.log("Something went wrong");
+        if (response.ok) {
+          console.log("Success");
+        } else {
+          console.log("Something went wrong");
+        }
       }
     } catch (error) {
       console.log(error);
@@ -98,9 +103,10 @@ function GoFish() {
 
   const shuffleCards = async () => {
     await loadHighScore();
-    if (turns >= 6) {
-      await checkHighScore();
-    }
+
+    await checkHighScore();
+    checker = 0;
+
     const shuffledCards: Card[] = [...cardImages, ...cardImages]
       .sort(() => Math.random() - 0.5) //shuffling
       .map((card) => ({ ...card, id: Math.random() }));
@@ -133,6 +139,7 @@ function GoFish() {
     if (choiceOne && choiceTwo) {
       setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
+        checker = checker + 1;
         setCards((prevCards) => {
           return prevCards.map((card) => {
             if (card.src === choiceOne.src) {
@@ -158,7 +165,7 @@ function GoFish() {
 
   return (
     <div id="wholeContainer">
-      <h1>Match</h1>
+      <h1>Go-Fish</h1>
       <div id="gameContainer">
         <button id="newGame" onClick={shuffleCards}>
           New Game
@@ -176,7 +183,11 @@ function GoFish() {
           ))}
         </div>
         <div id="para">
-          <p>HighScore: {HighScore !== null ? HighScore : "Loading..."} </p>
+          <p>
+            HighScore:{" "}
+            {HighScore !== null && HighScore !== 999999 ? HighScore : ""}
+          </p>
+
           <p>Turns: {turns}</p>
         </div>
       </div>
