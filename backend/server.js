@@ -276,6 +276,54 @@ app.post("/api/check", async (req, res) => {
   }
 });
 
+app.post("/api/news", async (req, res) => {
+  try {
+    const { newsletter } = req.body;
+
+    // Fetch email addresses from the database
+    const emails = await LoginModel.find({}, 'email');
+
+    // Extract email addresses from the documents
+    const emailAddresses = emails.map(login => login.email);
+
+    // Create nodemailer transporter
+    let transporter = nodemailer.createTransport({
+      service: 'Gmail',
+      auth: {
+        user: 'mentalifyfyp@gmail.com', // Your email address
+        pass: 'uyge ktyq ndjg zbyw' // Your email password
+      }
+    });
+
+    // Send email to each recipient
+    for (const login of emails) {
+      const mailOptions = {
+        from: 'Mentalify <mentalifyfyp@gmail.com>',
+        to: login.email,
+        subject: 'Newsletter',
+        text: newsletter
+      };
+
+      try {
+        const info = await transporter.sendMail(mailOptions);
+        console.log("Email sent:", info.response);
+      } catch (error) {
+        console.error("Error sending email:", error);
+        // Continue to next recipient even if an error occurs
+      }
+    }
+
+    // Send response after all emails have been sent
+    res.status(200).json({ message: "Newsletter sent to all recipients." });
+
+  } catch (error) {
+    // Handle errors appropriately
+    console.error("Error:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+
+
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
