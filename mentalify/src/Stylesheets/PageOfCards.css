@@ -40,6 +40,18 @@
         transition: .2s;
 }
 
+#cardNewsLetter {
+    flex: 1;
+    background-image: url(../assets/bundle-1853667_1280.jpg);
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the image */
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+}
+
 #cardMulti {
     flex: 1;
     background-image: url(../assets/pexels-pixabay-278918.jpg);
@@ -72,6 +84,14 @@
     transform: scale(1.25);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     
+    filter: grayscale(50%);
+
+}
+
+#cardNewsLetter:hover {
+    transform: scale(1.25);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
     filter: grayscale(50%);
 
 }

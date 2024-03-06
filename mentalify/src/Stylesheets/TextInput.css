@@ -1,0 +1,22 @@
+.Input {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20vh;
+    padding-bottom: 5rem;
+}
+
+#newsInput {
+    height: 40vh;
+    
+    width: 100%;
+    /* Make the input box take the full width of its container */
+    resize: none;
+    /* Prevent resizing */
+    overflow-y: auto;
+    /* Add scrollbar when content overflows vertically */
+    display: block;
+    /* Ensure input occupies its own line */
+    
+
+}

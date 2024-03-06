@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./components/Pages/SignUp";
 import Homepage from "./components/Pages/Homepage";
 import Education from "./components/Pages/Education";
+import NotFound from "./components/Pages/NotFound";
+import NewsLetter from "./components/Pages/NewsLetter";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path="homepage" element={<Homepage></Homepage>}></Route>
         <Route path="education" element={<Education></Education>}></Route>
         <Route path="training" element={<MemoryGame1></MemoryGame1>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
+        <Route path="/newsletter" element={<NewsLetter></NewsLetter>}></Route>
+
         <Route
           path="forgot"
           element={<ForgotPassword></ForgotPassword>}

@@ -39,6 +39,21 @@ function PageOfCards() {
             </div>
           </div>
         </div>
+
+        {user.email === "seancolhoun08@gmail.com" && (
+          <div className="card1">
+            <div id="cardNewsLetter" className="card-background rounded">
+              <div className="card-body1">
+                <a
+                  href="/newsletter"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <h2 className="card-headings">Newsletter</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
