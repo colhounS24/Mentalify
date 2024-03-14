@@ -1,0 +1,10 @@
+# docker compose file for local development
+services:
+  frontend:
+    image: fyp24jd002/frontend:dev
+    build:
+      target: dev
+      context: mentalify
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"

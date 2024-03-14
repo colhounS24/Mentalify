@@ -1,0 +1,12 @@
+# docker compose file imitating production setup
+services:
+  frontend:
+    image: fyp24jd002/frontend:test
+    build:
+      target: prodtest
+      context: mentalify
+      dockerfile: Dockerfile
+      # args:
+      #   API_URI: http://localhost:8080/api
+    ports:
+      - "8080:80"
