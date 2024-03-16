@@ -5,8 +5,9 @@ services:
     build:
       target: prodtest
       context: mentalify
-      dockerfile: Dockerfile
-      # args:
+      dockerfile: docker/Dockerfile
+      args:
+        PUBLIC_URL: /projects/FYP24JD002
       #   API_URI: http://localhost:8080/api
     ports:
       - "8080:80"

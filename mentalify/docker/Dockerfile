@@ -18,10 +18,12 @@ CMD ["run", "dev", "--", "--host"]
 # builder, required for the prodtest target
 FROM dev AS builder
 ARG API_URI
+ARG PUBLIC_URL
 # ENV REACT_APP_API_URI=$API_URI
-RUN npm run build
+RUN npm run build -- --base=${PUBLIC_URL}
 
 # prodtest server
 FROM nginx:stable-alpine AS prodtest
-COPY --from=builder /app/build /usr/share/nginx/html
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+ARG PUBLIC_URL
+COPY --from=builder /app/dist /usr/share/nginx/html${PUBLIC_URL}
+COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf

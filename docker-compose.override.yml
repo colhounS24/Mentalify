@@ -5,6 +5,6 @@ services:
     build:
       target: dev
       context: mentalify
-      dockerfile: Dockerfile
+      dockerfile: docker/Dockerfile
     ports:
       - "5173:5173"
