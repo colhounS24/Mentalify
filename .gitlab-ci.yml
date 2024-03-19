@@ -58,7 +58,7 @@ build frontend app:
   variables:
     CI: "false"
   script:
-    - cd frontend
+    - cd mentalify
     - ln -s /app/node_modules/
     - npm run build -- --base=${PUBLIC_URL}
 
