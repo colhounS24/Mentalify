@@ -8,9 +8,9 @@ function NavBar() {
       style={{ marginBottom: "20px" }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand badge text-bg-info " href="/">
-          Mentalify
-        </a>
+        <Link to={"/"}>
+          <a className="navbar-brand badge text-bg-info ">Mentalify</a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

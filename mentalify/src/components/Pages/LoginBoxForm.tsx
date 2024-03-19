@@ -3,6 +3,7 @@ import NavBar from "../NavBar";
 import Footer from "../Footer";
 import { SubmitHandler, useForm } from "react-hook-form";
 import "../../Stylesheets/Signup.css";
+import { Link } from "react-router-dom";
 
 const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
 
@@ -31,7 +32,7 @@ function LoginBoxForm() {
         const responseData = await response.json();
         localStorage.setItem("user", JSON.stringify(responseData.existingUser));
         console.log("Data Found", responseData.firstName);
-        window.location.href = "/homepage";
+        <Link to={"/homepage"}></Link>;
       } else {
         const responseData = await response.json();
         alert(responseData.message);
@@ -98,13 +99,13 @@ function LoginBoxForm() {
             >
               Login
             </button>
-            <a href="/signup" className="btn btn-primary">
-              Create an account!
-            </a>
+            <Link to={"/signup"}>
+              <a className="btn btn-primary">Create an account!</a>
+            </Link>
           </div>
-          <a href="/forgot" className="btn btn-secondary">
-            Forgot Password?
-          </a>
+          <Link to={"/forgot"}>
+            <a className="btn btn-secondary">Forgot Password?</a>
+          </Link>
         </form>
       </div>
       <div className="footer--pin1">
