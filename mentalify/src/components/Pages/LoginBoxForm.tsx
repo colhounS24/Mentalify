@@ -32,7 +32,7 @@ function LoginBoxForm() {
         const responseData = await response.json();
         localStorage.setItem("user", JSON.stringify(responseData.existingUser));
         console.log("Data Found", responseData.firstName);
-        <Link to={"/homepage"}></Link>;
+        window.location.href = "/homepage";
       } else {
         const responseData = await response.json();
         alert(responseData.message);
