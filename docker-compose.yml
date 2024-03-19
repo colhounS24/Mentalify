@@ -5,3 +5,6 @@ name: fyp24jd002
 services:
   frontend:
     image: fyp24jd002/frontend:dev
+
+  backend:
+    image: fyp24jd002/backend:dev

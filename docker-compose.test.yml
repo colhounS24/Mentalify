@@ -8,6 +8,13 @@ services:
       dockerfile: docker/Dockerfile
       args:
         PUBLIC_URL: /projects/FYP24JD002
-      #   API_URI: http://localhost:8080/api
     ports:
       - "8080:80"
+
+  backend:
+    image: fyp24jd002/backend:test
+    build:
+      target: prod
+      context: backend
+      dockerfile: docker/Dockerfile
+
