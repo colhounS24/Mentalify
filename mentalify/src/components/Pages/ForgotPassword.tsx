@@ -4,6 +4,8 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { useState } from "react"; // Import useState hook
 import "../../Stylesheets/Forgot.css";
 
+const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
+
 type FormFields = {
   email: string;
 };
@@ -42,7 +44,7 @@ function ForgotPassword() {
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
       setEmail(data.email);
-      const response = await fetch("http://localhost:5000/api/forgot", {
+      const response = await fetch(`${baseUrl}/api/forgot`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +64,7 @@ function ForgotPassword() {
 
   const onSubmit2: SubmitHandler<FormFields2> = async (data) => {
     try {
-      const response = await fetch("http://localhost:5000/api/check", {
+      const response = await fetch(`${baseUrl}/api/check`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -84,7 +86,7 @@ function ForgotPassword() {
 
   const onSubmit3: SubmitHandler<FormFields3> = async (data) => {
     try {
-      const response = await fetch("http://localhost:5000/api/update", {
+      const response = await fetch(`${baseUrl}/api/update`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

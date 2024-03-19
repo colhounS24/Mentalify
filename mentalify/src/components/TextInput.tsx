@@ -1,6 +1,8 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import "../Stylesheets/TextInput.css";
 
+const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
+
 type FormFields = {
   newsletter: string;
 };
@@ -14,7 +16,7 @@ function TextInput() {
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
-      const response = await fetch("http://localhost:5000/api/news", {
+      const response = await fetch(`${apiURL}/api/news`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

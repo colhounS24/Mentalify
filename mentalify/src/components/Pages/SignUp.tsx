@@ -4,6 +4,9 @@ import Footer from "../Footer";
 import { SubmitHandler, useForm } from "react-hook-form";
 import "../../Stylesheets/Signup.css";
 
+const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
+console.log(apiUrl);
+
 type FormFields2 = {
   email: string;
   password: string;
@@ -21,7 +24,7 @@ function SignUp() {
 
   const onSubmit: SubmitHandler<FormFields2> = async (data) => {
     try {
-      const response = await fetch("http://localhost:5000/api/create", {
+      const response = await fetch(`${apiUrl}/api/create`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

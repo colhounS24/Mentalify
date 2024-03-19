@@ -11,9 +11,11 @@ import Education from "./components/Pages/Education";
 import NotFound from "./components/Pages/NotFound";
 import NewsLetter from "./components/Pages/NewsLetter";
 
+const baseurl = import.meta.env.BASE_URL || '/'
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={baseurl}>
       <Routes>
         <Route path="/" element={<Splash></Splash>}></Route>
         <Route path="login" element={<LoginBoxForm></LoginBoxForm>}></Route>

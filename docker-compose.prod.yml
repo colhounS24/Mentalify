@@ -1,0 +1,11 @@
+# docker compose used in production server (together with docker-compose.yml)
+# since frontned is not dockerized, it is not defined in these files
+services:
+  backend:
+    image: ${CI_REGISTRY_IMAGE}/backend:${CI_COMMIT_REF_SLUG}
+    build:
+      target: prod
+    ports:
+      - "127.0.0.1:${CI_PORT}:5000"
+    restart:
+      always

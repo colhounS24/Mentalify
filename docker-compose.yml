@@ -1,0 +1,9 @@
+name: fyp24jd002
+
+# frontend service defined in the docker-compose.override file
+# as frontend is not running within a Docker container in production
+services:
+  backend:
+    build:
+      context: backend
+      dockerfile: docker/Dockerfile

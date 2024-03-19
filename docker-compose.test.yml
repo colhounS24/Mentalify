@@ -1,0 +1,20 @@
+# docker compose file imitating production setup
+services:
+  frontend:
+    image: fyp24jd002/frontend:test
+    build:
+      target: prodtest
+      context: mentalify
+      dockerfile: docker/Dockerfile
+      args:
+        PUBLIC_URL: /projects/FYP24JD002
+    ports:
+      - "8080:80"
+
+  backend:
+    image: fyp24jd002/backend:test
+    build:
+      target: prod
+      context: backend
+      dockerfile: docker/Dockerfile
+
