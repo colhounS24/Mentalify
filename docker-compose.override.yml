@@ -10,9 +10,8 @@ services:
       - "5173:5173"
 
   backend:
+    image: fyp24jd002/backend:dev
     build:
       target: dev
-      context: backend
-      dockerfile: docker/Dockerfile
     ports:
       - "5000:5000"
