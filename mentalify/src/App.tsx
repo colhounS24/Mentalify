@@ -11,7 +11,7 @@ import Education from "./components/Pages/Education";
 import NotFound from "./components/Pages/NotFound";
 import NewsLetter from "./components/Pages/NewsLetter";
 
-const baseurl = import.meta.env.BASE_URL || '/'
+const baseurl = import.meta.env.BASE_URL || "/";
 
 function App() {
   return (
