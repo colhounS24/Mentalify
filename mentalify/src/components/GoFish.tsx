@@ -9,6 +9,8 @@ import card4 from "../assets/—Pngtree—fruit_game_icon_png_8362133-transforme
 import card5 from "../assets/—Pngtree—fruit_game_icon_png_8362133-transformed_5.png";
 import card6 from "../assets/—Pngtree—fruit_game_icon_png_8362133-transformed_6.png";
 
+const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
+
 var checker = 0;
 
 interface Card {
@@ -51,7 +53,7 @@ function GoFish() {
         const user = JSON.parse(userString);
         console;
 
-        const response = await fetch("http://localhost:5000/api/highscore", {
+        const response = await fetch(`${baseUrl}/api/highscore`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -80,7 +82,7 @@ function GoFish() {
 
       const user = JSON.parse(userString);
 
-      const response = await fetch("http://localhost:5000/api/gethighscore", {
+      const response = await fetch(`${baseUrl}/api/gethighscore`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
