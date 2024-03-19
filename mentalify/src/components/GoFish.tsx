@@ -53,7 +53,7 @@ function GoFish() {
         const user = JSON.parse(userString);
         console;
 
-        const response = await fetch(`${baseUrl}/api/highscore`, {
+        const response = await fetch(`${apiUrl}/api/highscore`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -82,7 +82,7 @@ function GoFish() {
 
       const user = JSON.parse(userString);
 
-      const response = await fetch(`${baseUrl}/api/gethighscore`, {
+      const response = await fetch(`${apiUrl}/api/gethighscore`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

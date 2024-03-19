@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
     <nav
@@ -23,14 +25,14 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto" style={{ gap: "0.35rem" }}>
             <li className="nav-item">
-              <a className="btn btn-success" href="/login">
-                Login
-              </a>
+              <Link to={"/login"}>
+                <button className="btn btn-success">Login</button>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="btn btn-primary" href="/signup">
-                Signup
-              </a>
+              <Link to={"/signup"}>
+                <button className="btn btn-primary">Signup</button>
+              </Link>
             </li>
           </ul>
         </div>

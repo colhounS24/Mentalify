@@ -234,7 +234,7 @@ app.post('/api/forgot', async (req, res) => {
     let mailOptions = {
       from: 'Mentalify <mentalifyfyp@gmail.com>',
       to: email,
-      subject: 'Welcome to Mentalify',
+      subject: 'Reset Password',
       text: `To ${existingUser.firstName},
 
 Your one-time code to reset your password as requested:
