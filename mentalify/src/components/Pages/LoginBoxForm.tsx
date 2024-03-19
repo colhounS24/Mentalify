@@ -6,6 +6,7 @@ import "../../Stylesheets/Signup.css";
 import { Link } from "react-router-dom";
 
 const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
+const baseUrl = window.location.href;
 
 type FormFields = {
   email: string;
@@ -32,7 +33,7 @@ function LoginBoxForm() {
         const responseData = await response.json();
         localStorage.setItem("user", JSON.stringify(responseData.existingUser));
         console.log("Data Found", responseData.firstName);
-        window.location.href = "/homepage";
+        window.location.href = baseUrl + "/homepage";
       } else {
         const responseData = await response.json();
         alert(responseData.message);
