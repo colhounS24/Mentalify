@@ -11,7 +11,6 @@ stages:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-    - if: $CI_COMMIT_BRANCH == 'misha'
 
 # setting PUBLIC_URL here will propagate to the other jobs
 # and will create an optimized production build that can be hosted on
@@ -68,7 +67,6 @@ deploy to fyp server:
     - fyp
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-    - if: $CI_COMMIT_BRANCH == 'misha'
   environment:
     name: prod
     url: https://fyp.cs.nuim.ie${PUBLIC_URL}/
