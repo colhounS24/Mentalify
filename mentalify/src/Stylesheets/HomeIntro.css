@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     /* Stack items vertically */
+    width: 90%;
+    margin: 0 auto;
    
     /* Stretch items to fill the container's width */
     height: 100%;

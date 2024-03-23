@@ -19,3 +19,7 @@
     /* Adjust font size as needed */
 }
 
+.hidden {
+    display: none;
+}
+
