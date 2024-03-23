@@ -4,9 +4,8 @@ import HomeIntro from "../HomeIntro";
 import NavBar from "../NavBar";
 import Quote from "../Quote";
 import LoginCardHome from "../LoginCardHome";
-import "../../Stylesheets/Splash.css";
 
-function Splash() {
+function Landing() {
   return (
     <>
       <div className="content-container">
@@ -23,4 +22,4 @@ function Splash() {
   );
 }
 
-export default Splash;
+export default Landing;

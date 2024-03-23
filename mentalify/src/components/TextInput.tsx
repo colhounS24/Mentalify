@@ -16,7 +16,7 @@ function TextInput() {
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
-      const response = await fetch(`${apiURL}/api/news`, {
+      const response = await fetch(`${apiUrl}/api/news`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

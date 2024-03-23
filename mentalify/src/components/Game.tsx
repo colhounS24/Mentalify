@@ -32,7 +32,7 @@ const cardImages: Card[] = [
   { src: card6, id: 6, matched: false },
 ];
 
-function GoFish() {
+function Game() {
   const [HighScore, setHighScore] = useState<number | null>(null);
   const [cards, setCards] = useState<Card[]>([]);
   const [turns, setTurns] = useState<number>(0);
@@ -197,4 +197,4 @@ function GoFish() {
   );
 }
 
-export default GoFish;
+export default Game;

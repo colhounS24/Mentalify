@@ -1,4 +1,4 @@
-import Splash from "./components/Pages/Splash";
+import Landing from "./components/Pages/Landing";
 import LoginBoxForm from "./components/Pages/LoginBoxForm";
 import MemoryGame1 from "./components/Pages/MemoryGame1";
 import ForgotPassword from "./components/Pages/ForgotPassword";
@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter basename={baseurl}>
       <Routes>
-        <Route path="" element={<Splash></Splash>}></Route>
+        <Route path="" element={<Landing></Landing>}></Route>
         <Route path="/login" element={<LoginBoxForm></LoginBoxForm>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/homepage" element={<Homepage></Homepage>}></Route>

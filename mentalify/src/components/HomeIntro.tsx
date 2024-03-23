@@ -2,16 +2,14 @@ import "../Stylesheets/HomeIntro.css";
 function HomeIntro() {
   return (
     <div id="main">
-      <p className="display-6 text-center " id="main-para">
-        Welcome to Mentalify
-      </p>
-      <div className="container">
-        <div className="card text-center" id="topCard">
+      <p className="display-6 text-center mainT">Welcome to Mentalify</p>
+      <div className="container5">
+        <div className="card text-center topCard">
           <div className="card-body">
-            <h6 className="card-subtitle mb-2 text-body-secondary">
+            <h6 className="card-subtitle mb-2 text-body-secondary cardT">
               What Is Mentalify?
             </h6>
-            <p className="card-text">
+            <p className="card-text descrips">
               Mentalify is a platform for improvement. It allows users to access
               an abundance of materials to further their knowledge regarding the
               topic of human memory education, specifically the diseases that
@@ -21,12 +19,12 @@ function HomeIntro() {
           </div>
         </div>
 
-        <div className="card text-center" id="bottomCard">
+        <div className="card text-center topCard">
           <div className="card-body">
-            <h6 className="card-subtitle mb-2 text-body-secondary">
+            <h6 className="card-subtitle mb-2 text-body-secondary cardT">
               How Can Mentalify Help?
             </h6>
-            <p className="card-text">
+            <p className="card-text descrips">
               Mentalify allows users to assess their current cognitive ability
               through a test, gauging their ability in various categories.
               Furthering this, Mentalify promotes training to help users improve

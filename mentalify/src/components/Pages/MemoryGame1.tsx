@@ -1,5 +1,5 @@
 import NavBarLoggedIn from "../NavBarLoggedIn";
-import GoFish from "../GoFish";
+import Game from "../Game";
 import Footer from "../Footer";
 
 function MemoryGame1() {
@@ -7,7 +7,7 @@ function MemoryGame1() {
     <>
       <div className="content-container">
         <NavBarLoggedIn></NavBarLoggedIn>
-        <GoFish></GoFish>
+        <Game></Game>
       </div>
       <div className="footer--pin">
         <Footer />

@@ -44,7 +44,7 @@ function ForgotPassword() {
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
       setEmail(data.email);
-      const response = await fetch(`${baseUrl}/api/forgot`, {
+      const response = await fetch(`${apiUrl}/api/forgot`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function ForgotPassword() {
 
   const onSubmit2: SubmitHandler<FormFields2> = async (data) => {
     try {
-      const response = await fetch(`${baseUrl}/api/check`, {
+      const response = await fetch(`${apiUrl}/api/check`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -86,7 +86,7 @@ function ForgotPassword() {
 
   const onSubmit3: SubmitHandler<FormFields3> = async (data) => {
     try {
-      const response = await fetch(`${baseUrl}/api/update`, {
+      const response = await fetch(`${apiUrl}/api/update`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

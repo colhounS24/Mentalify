@@ -1,4 +1,4 @@
-import "../Stylesheets/Brain.css"; // Import your CSS file for styling
+import "../Stylesheets/Brain.css";
 import { useState } from "react";
 import image1 from "../assets/_removal.ai__2fefe7a6-8fc1-408d-93be-d12e90097429-brain-transformed.png";
 

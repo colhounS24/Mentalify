@@ -2,7 +2,6 @@
     width: 70%;
     height: auto;
     margin: auto;
-    margin-top: 30px;
     
     
     /* Adjust the padding as needed */
@@ -10,4 +9,8 @@
     border: none;
     /* Adjust the color and transparency as needed */
     border-radius: 10px;
+}
+
+#quote{
+    font-size: 3vmin;
 }

@@ -1,13 +1,14 @@
-.container {
+.container5 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    /* Ensure all containers stretch to the same height */
-    /* Optional: Prevent wrapping */
+    flex-direction: column;
+    /* Stack items vertically */
+   
+    /* Stretch items to fill the container's width */
+    height: 100%;
+    /* Ensure the container takes full height */
 }
 
-.container>div {
+.container5>div {
     flex: 1;
     /* Equal distribution of space */
     margin: 10px;
@@ -15,6 +16,22 @@
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-#main-para{
+.mainT{
     font-weight:500;
+    font-size: 5vmin;
 }
+
+.descrips{
+    font-size: 2.5vmin;
+}
+
+
+.cardT{
+    font-size: 3.5vmin;
+}
+
+.topCard{
+    height: 100%;
+}
+
+
