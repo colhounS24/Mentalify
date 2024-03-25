@@ -11,6 +11,8 @@ function Recent() {
           width: "50%",
           margin: "0 auto",
           overflow: "auto",
+          boxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
+          WebkitBoxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
         }}
       >
         <h1 style={{ fontSize: "5vmin", padding: "2vmin" }}>
@@ -52,6 +54,8 @@ function Recent() {
           overflow: "auto",
           marginTop: "3vmax",
           marginBottom: "2vmax",
+          boxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
+          WebkitBoxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
         }}
       >
         <h1 style={{ fontSize: "5vmin" }}>Useful Links</h1>
