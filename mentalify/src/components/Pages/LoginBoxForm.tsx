@@ -5,6 +5,8 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import "../../Stylesheets/Signup.css";
 import { Link } from "react-router-dom";
 
+// Define your authentication state type
+
 const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
 const baseurl = import.meta.env.BASE_URL || "/";
 
@@ -33,6 +35,7 @@ function LoginBoxForm() {
         const responseData = await response.json();
         localStorage.setItem("user", JSON.stringify(responseData.existingUser));
         console.log("Data Found", responseData.firstName);
+
         window.location.href = baseurl + "/homepage";
       } else {
         const responseData = await response.json();
