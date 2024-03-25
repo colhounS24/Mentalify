@@ -35,7 +35,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 90vmin;
+    width: 50vmax;
     height: auto;
     gap: 1rem;
 }
@@ -58,6 +58,7 @@
 
 .card-grid {
     width: 100%;
+    height: auto;
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
