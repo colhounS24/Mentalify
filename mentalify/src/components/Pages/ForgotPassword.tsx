@@ -129,7 +129,9 @@ function ForgotPassword() {
                 })}
               />
               {errors.email && (
-                <div style={{ color: "red" }}>{errors.email.message}</div>
+                <div style={{ color: "red" }} className="errors">
+                  {errors.email.message}
+                </div>
               )}
               <button
                 disabled={isSubmitting2}
@@ -157,7 +159,9 @@ function ForgotPassword() {
                   })}
                 />
                 {errorMessage && (
-                  <div style={{ color: "red" }}>{errorMessage}</div>
+                  <div style={{ color: "red" }} className="errors">
+                    {errorMessage}
+                  </div>
                 )}
 
                 <button
@@ -194,7 +198,7 @@ function ForgotPassword() {
                     })}
                   />
                   {errors3.password && (
-                    <div style={{ color: "red" }}>
+                    <div style={{ color: "red" }} className="errors">
                       {errors3.password.message}
                     </div>
                   )}

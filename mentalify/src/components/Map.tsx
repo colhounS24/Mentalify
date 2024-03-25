@@ -4,7 +4,9 @@ function MapClinic() {
   return (
     <div id="mapContainerFlex" style={{ margin: "2rem" }}>
       <div id="titleMap">
-        <h4>Interactive map of clinics in Ireland</h4>
+        <h4 style={{ fontSize: "4vmin", textAlign: "center" }}>
+          Interactive map of clinics in Ireland
+        </h4>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d838656.5155587634!2d-7.491117947757545!3d53.422939049518895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smemory%20clinic!5e0!3m2!1sen!2sie!4v1708038848623!5m2!1sen!2sie"
           allowFullScreen
@@ -27,9 +29,9 @@ function MapClinic() {
           WebkitBoxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
         }}
       >
-        <h4>Help and Available Treatments</h4>
+        <h4 style={{ fontSize: "4vmin" }}>Help and Available Treatments</h4>
         <div>
-          <p>
+          <p style={{ fontSize: "3vmin" }}>
             There is currently <strong>no cure</strong> for dementia. But there
             are medicines and other treatments that can help with dementia
             symptoms. Most of the medicines avaialble are to treat Alzheimers
@@ -52,11 +54,11 @@ function MapClinic() {
           </p>
         </div>
         <div>
-          <p>
+          <p style={{ fontSize: "3vmin" }}>
             <br></br>Medicines for dementia symptoms are important, but are only
             one part of the care for a person with dementia. Other treatments
             such as
-            <strong>activities and support – for the carer</strong>, too – are
+            <strong> activities and support – for the carer</strong>, too – are
             just as important in helping people to live well with dementia.
             These can consist of visiting <strong>clinics</strong> which are
             designed to help with{" "}

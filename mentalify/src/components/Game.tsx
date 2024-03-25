@@ -167,9 +167,13 @@ function Game() {
 
   return (
     <div id="wholeContainer">
-      <h1>Go-Fish</h1>
+      <h1 style={{ fontSize: "8vmin" }}>Match The Cards</h1>
       <div id="gameContainer">
-        <button id="newGame" onClick={shuffleCards}>
+        <button
+          id="newGame"
+          onClick={shuffleCards}
+          style={{ fontSize: "5vmin" }}
+        >
           New Game
         </button>
 
@@ -185,12 +189,12 @@ function Game() {
           ))}
         </div>
         <div id="para">
-          <p>
+          <p style={{ fontSize: "5vmin" }}>
             HighScore:{" "}
             {HighScore !== null && HighScore !== 999999 ? HighScore : ""}
           </p>
 
-          <p>Turns: {turns}</p>
+          <p style={{ fontSize: "5vmin" }}>Turns: {turns}</p>
         </div>
       </div>
     </div>

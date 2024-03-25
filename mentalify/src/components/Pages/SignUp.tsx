@@ -73,7 +73,9 @@ function SignUp() {
                 })}
               />
               {errors.email && (
-                <div style={{ color: "red" }}>{errors.email.message}</div>
+                <div style={{ color: "red" }} className="errors">
+                  {errors.email.message}
+                </div>
               )}
             </div>
             <div className="mb-3 text-center fw-bold">
@@ -108,7 +110,9 @@ function SignUp() {
                   })}
                 />
                 {errors.password && (
-                  <div style={{ color: "red" }}>{errors.password.message}</div>
+                  <div style={{ color: "red" }} className="errors">
+                    {errors.password.message}
+                  </div>
                 )}
 
                 <input
@@ -134,7 +138,9 @@ function SignUp() {
                   })}
                 />
                 {errors.firstName && (
-                  <div style={{ color: "red" }}>{errors.firstName.message}</div>
+                  <div style={{ color: "red" }} className="errors">
+                    {errors.firstName.message}
+                  </div>
                 )}
                 <input
                   className="form-control w-60"
@@ -145,7 +151,9 @@ function SignUp() {
                   })}
                 />
                 {errors.lastName && (
-                  <div style={{ color: "red" }}>{errors.lastName.message}</div>
+                  <div style={{ color: "red" }} className="errors">
+                    {errors.lastName.message}
+                  </div>
                 )}
               </div>
               <label className="form-label Headings">Date of Birth</label>
@@ -168,7 +176,9 @@ function SignUp() {
                 })}
               />
               {errors.dob && (
-                <div style={{ color: "red" }}>{errors.dob.message}</div>
+                <div style={{ color: "red" }} className="errors">
+                  {errors.dob.message}
+                </div>
               )}
             </div>
           </div>

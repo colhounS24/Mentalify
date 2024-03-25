@@ -1,4 +1,5 @@
 import "../Stylesheets/PageOfCards.css";
+import { Link } from "react-router-dom";
 
 function PageOfCards() {
   const userString = localStorage.getItem("user");
@@ -17,12 +18,11 @@ function PageOfCards() {
         <div className="card1">
           <div id="cardEducational" className="card-background rounded">
             <div className="card-body1">
-              <a
-                href="/education"
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                <h2 className="card-headings">Education</h2>
-              </a>
+              <Link to={"/education"}>
+                <a style={{ textDecoration: "none", color: "black" }}>
+                  <h2 className="card-headings text3">Education</h2>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -30,26 +30,24 @@ function PageOfCards() {
         <div className="card1">
           <div id="cardTraining" className="card-background rounded">
             <div className="card-body1">
-              <a
-                href="/training"
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                <h2 className="card-headings">Training</h2>
-              </a>
+              <Link to={"/training"}>
+                <a style={{ textDecoration: "none", color: "black" }}>
+                  <h2 className="card-headings text3">Training</h2>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
 
-        {user.email === "seancolhoun08@gmail.com" && (
+        {user && user.email === "seancolhoun08@gmail.com" && (
           <div className="card1">
             <div id="cardNewsLetter" className="card-background rounded">
               <div className="card-body1">
-                <a
-                  href="/newsletter"
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  <h2 className="card-headings">Newsletter</h2>
-                </a>
+                <Link to={"/newsletter"}>
+                  <a style={{ textDecoration: "none", color: "black" }}>
+                    <h2 className="card-headings text3">Newsletter</h2>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

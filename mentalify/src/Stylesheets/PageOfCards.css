@@ -7,7 +7,8 @@
 
 .card1 {
     flex: 1;
-    min-height: 70vh;
+    height: 50vmin;
+    width: auto;
     /* Adjust the height as needed */
     display: flex;
     flex-direction: row;
@@ -149,8 +150,14 @@
 
 #homeTitle{
     font-weight: 500;
+    font-size: 6vmin;
 }
 
 #homeName{
     font-weight: 350;
+    font-size: 6vmin;
+}
+
+.text3{
+    font-size: 4vmin;
 }

@@ -36,8 +36,8 @@ function Brain() {
           padding: "2%",
           margin: "0",
           fontWeight: "bold",
-          fontSize: "2.5vw",
-          marginBottom: "-1rem",
+          fontSize: "8vmin",
+          marginBottom: "1rem",
         }}
       >
         The Brain
@@ -45,9 +45,10 @@ function Brain() {
       <p
         style={{
           textAlign: "center",
-          top: "2rem",
-          marginBottom: "2rem",
+          top: "5rem",
+          marginBottom: "3rem",
           fontStyle: "italic",
+          fontSize: "3vmin",
         }}
       >
         Click on each button to learn about different parts of the brain
@@ -96,7 +97,7 @@ function Brain() {
               style={{ backgroundColor: "lightblue" }}
             >
               <h1 className="headingExplain">Frontal Lobe</h1>
-              <p>
+              <p className="information">
                 The FRONTAL LOBE is for personality and emotions, higher
                 thinking skills, like problem solving; and controlling movement.
                 It continues to develop until you are in your mid 20s.
@@ -112,7 +113,7 @@ function Brain() {
               style={{ backgroundColor: "pink" }}
             >
               <h1 className="headingExplain">Parietal Lobe</h1>
-              <p>
+              <p className="information">
                 The PARIETAL LOBE helps us make sense of the world through our
                 senses, understand spatial relationships, focus our attention,
                 maintain body awareness, and perform mathematical and spatial
@@ -129,7 +130,7 @@ function Brain() {
               style={{ backgroundColor: "lightgreen" }}
             >
               <h1 className="headingExplain">Occipital Lobe</h1>
-              <p>
+              <p className="information">
                 The OCCIPITAL LOBE is crucial for our sense of sight, enabling
                 us to perceive, recognize, and understand the visual world. It
                 allows us to see and interpret our surroundings, recognize
@@ -145,7 +146,7 @@ function Brain() {
               style={{ backgroundColor: "coral" }}
             >
               <h1 className="headingExplain">Cerebellum</h1>
-              <p>
+              <p className="information">
                 The CEREBELLUM is essential for coordinating movements,
                 maintaining balance, learning new motor skills, supporting
                 certain cognitive functions, and potentially regulating
@@ -162,7 +163,7 @@ function Brain() {
               style={{ backgroundColor: "lightblue" }}
             >
               <h1 className="headingExplain">Spinal Cord</h1>
-              <p>
+              <p className="information">
                 The SPINAL CORD serves as a vital communication link between the
                 brain and the body, transmitting sensory information from the
                 body to the brain and motor commands from the brain to the body.
@@ -179,7 +180,7 @@ function Brain() {
               style={{ backgroundColor: "lightgoldenrodyellow" }}
             >
               <h1 className="headingExplain">Temporal Lobe</h1>
-              <p>
+              <p className="information">
                 The TEMPORAL LOBE is involved in auditory processing, memory
                 formation, language comprehension, visual processing, emotional
                 regulation, and higher-order cognitive functions. It plays a

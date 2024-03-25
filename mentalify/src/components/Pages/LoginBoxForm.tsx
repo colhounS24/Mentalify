@@ -70,7 +70,9 @@ function LoginBoxForm() {
                 })}
               />
               {errors.email && (
-                <div style={{ color: "red" }}>{errors.email.message}</div>
+                <div style={{ color: "red" }} className="errors">
+                  {errors.email.message}
+                </div>
               )}
             </div>
             <div className="mb-3 text-center fw-bold">
@@ -88,7 +90,9 @@ function LoginBoxForm() {
                 })}
               />
               {errors.password && (
-                <div style={{ color: "red" }}>{errors.password.message}</div>
+                <div style={{ color: "red" }} className="errors">
+                  {errors.password.message}
+                </div>
               )}
             </div>
           </div>
@@ -101,12 +105,12 @@ function LoginBoxForm() {
               Login
             </button>
             <Link to={"/signup"}>
-              <a className="btn btn-primary">Create an account!</a>
+              <button className="btn btn-primary">Create an account!</button>
+            </Link>
+            <Link to={"/forgot"}>
+              <button className="btn btn-secondary">Forgot Password?</button>
             </Link>
           </div>
-          <Link to={"/forgot"}>
-            <a className="btn btn-secondary">Forgot Password?</a>
-          </Link>
         </form>
       </div>
       <div className="footer--pin1">

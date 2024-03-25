@@ -4,10 +4,16 @@ function AboutIllnesses() {
   return (
     <>
       <div>
-        <h2 id="aboutText" style={{ fontSize: "2.5vw" }}>
+        <h2 id="aboutText" style={{ fontSize: "5vmin" }}>
           Types of Human Memory Related Diseases
         </h2>
-        <p style={{ textAlign: "center", fontStyle: "italic" }}>
+        <p
+          style={{
+            textAlign: "center",
+            fontStyle: "italic",
+            fontSize: "3vmin",
+          }}
+        >
           Below are the 5 most common types of Dementia in Ireland
         </p>
       </div>
@@ -38,6 +44,7 @@ function AboutIllnesses() {
                 backgroundColor: "rgb(117, 221, 235)",
                 textAlign: "center",
                 fontWeight: "bold",
+                fontSize: "3.5vmin",
               }}
             >
               Alzheimer's Disease
@@ -48,7 +55,7 @@ function AboutIllnesses() {
             className="accordion-collapse collapse show"
             aria-labelledby="panelsStayOpen-headingOne"
           >
-            <div className="accordion-body">
+            <div className="accordion-body textA">
               <strong>Alzheimer's Disease</strong> makes up the majority of
               dementia cases in older people. It often develops slowly, over
               several years. Early signs usually include difficulty in forming
@@ -73,6 +80,7 @@ function AboutIllnesses() {
               style={{
                 backgroundColor: "rgb(163, 221, 231)",
                 fontWeight: "bold",
+                fontSize: "3.5vmin",
               }}
             >
               Vascular Dementia
@@ -83,7 +91,7 @@ function AboutIllnesses() {
             className="accordion-collapse collapse"
             aria-labelledby="panelsStayOpen-headingTwo"
           >
-            <div className="accordion-body">
+            <div className="accordion-body textA">
               <strong>Vascular Dementia</strong> is another common type of
               dementia, but is not as well known as Alzheimer's Disease. It can
               occur suddenly, for example, following a stroke affecting major
@@ -110,6 +118,7 @@ function AboutIllnesses() {
               style={{
                 backgroundColor: "rgb(117, 221, 235)",
                 fontWeight: "bold",
+                fontSize: "3.5vmin",
               }}
             >
               Lewy Body Disease
@@ -120,7 +129,7 @@ function AboutIllnesses() {
             className="accordion-collapse collapse"
             aria-labelledby="panelsStayOpen-headingThree"
           >
-            <div className="accordion-body">
+            <div className="accordion-body textA">
               <strong>Lewy Body Disease</strong> affects peoples movements,
               people with the disease may be prone to shuffling and falls. The
               symptoms are similair to Parkinson's Disease, however people with
@@ -145,6 +154,7 @@ function AboutIllnesses() {
               style={{
                 backgroundColor: "rgb(163, 221, 231)",
                 fontWeight: "bold",
+                fontSize: "3.5vmin",
               }}
             >
               Fronto-temporal Dementia
@@ -155,7 +165,7 @@ function AboutIllnesses() {
             className="accordion-collapse collapse"
             aria-labelledby="panelsStayOpen-headingFour"
           >
-            <div className="accordion-body">
+            <div className="accordion-body textA">
               <strong>Fronto-temporal Dementia</strong> can affect peoples
               personality, behaviour, and language function. Some cases of FTD
               are linked to motor neurone disease. With FTD, the early symptoms
@@ -182,6 +192,7 @@ function AboutIllnesses() {
               style={{
                 backgroundColor: "rgb(117, 221, 235)",
                 fontWeight: "bold",
+                fontSize: "3.5vmin",
               }}
             >
               Early/Younger Onset Dementia
@@ -192,7 +203,7 @@ function AboutIllnesses() {
             className="accordion-collapse collapse"
             aria-labelledby="panelsStayOpen-headingFive"
           >
-            <div className="accordion-body">
+            <div className="accordion-body textA">
               <strong>Early/Younger Onset Dementia</strong> refers to the fact
               that although Dementia usually affects older people, it can also
               affect younger people too. Most people with Early Onset Dementia

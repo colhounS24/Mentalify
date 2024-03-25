@@ -3,18 +3,37 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    font-size: larger;
-    gap: 30px;
+    
+    gap: 5vmin;
     width: 100%;
+}
+
+.Headings{
+    font-size: 5vmin;
 }
 
 #Buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
     justify-content: center;
-    gap: 10px;
+    gap: 2vmin;
+    font-size: 3.5vmin;
+    width: 60%;
+    align-items: stretch;
+    max-height: fit-content;
+    align-items: center;
+
+    
+    
+        
 }
+
+#Buttons button{
+    flex-grow: 1;
+    width: max-content;
+}
+
 
 
 
@@ -33,4 +52,8 @@
 
 .form-label{
     width: 100%;
+}
+
+.errors{
+    font-size: 3.5vmin;;
 }
