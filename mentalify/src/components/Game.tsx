@@ -188,14 +188,14 @@ function Game() {
             ></SingleCard>
           ))}
         </div>
-        <div id="para">
-          <p style={{ fontSize: "5vmin" }}>
-            HighScore:{" "}
-            {HighScore !== null && HighScore !== 999999 ? HighScore : ""}
-          </p>
+      </div>
+      <div id="para">
+        <p style={{ fontSize: "5vmin" }}>
+          HighScore:{" "}
+          {HighScore !== null && HighScore !== 999999 ? HighScore : ""}
+        </p>
 
-          <p style={{ fontSize: "5vmin" }}>Turns: {turns}</p>
-        </div>
+        <p style={{ fontSize: "5vmin" }}>Turns: {turns}</p>
       </div>
     </div>
   );
