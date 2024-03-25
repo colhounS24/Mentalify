@@ -96,7 +96,7 @@ function ForgotPassword() {
       if (!response.ok) {
         console.error("Error finding Data!");
       }
-      window.location.href = "/login";
+      window.location.href = apiUrl + "/login";
     } catch (error) {
       console.error("Error saving data:", error);
     }
