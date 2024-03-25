@@ -2,7 +2,7 @@
 
 
 .front {
-    width: 60vmin;
+    width: 10%;
     height: auto;
     /* Maintain aspect ratio */
     background: linear-gradient(to bottom, rgb(117, 221, 235), rgb(205, 242, 248));
@@ -13,7 +13,7 @@
 }
 
 .back {
-    width: 60vmin;
+    width: 10%;
     height: auto;
     border: 0.1rem solid;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
