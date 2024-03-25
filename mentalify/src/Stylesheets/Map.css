@@ -1,6 +1,6 @@
 #mapContainerFlex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     /* Align children vertically */
     justify-content: center;

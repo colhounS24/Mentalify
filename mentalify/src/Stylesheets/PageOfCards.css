@@ -3,11 +3,12 @@
     flex-direction: row;
     gap: 20px;
     margin: 40px;
+    
 }
 
 .card1 {
     flex: 1;
-    height: 50vmin;
+    height: 40vmax;
     width: auto;
     /* Adjust the height as needed */
     display: flex;
@@ -159,5 +160,5 @@
 }
 
 .text3{
-    font-size: 4vmin;
+    font-size: 3vmax;
 }

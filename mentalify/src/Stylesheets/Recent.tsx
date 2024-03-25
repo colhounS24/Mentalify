@@ -1,0 +1,74 @@
+function Recent() {
+  return (
+    <>
+      <div
+        className="rounded"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgb(117, 221, 235), rgb(205, 242, 248))",
+          backgroundRepeat: "no-repeat",
+          textAlign: "center",
+          width: "50%",
+          margin: "0 auto",
+          overflow: "auto",
+        }}
+      >
+        <h1 style={{ fontSize: "5vmin", padding: "2vmin" }}>
+          Recent Developments
+        </h1>
+        <p style={{ fontSize: "3vmin" }}>
+          There have been a number of recent developments and advancements
+          regarding the field of memory-related illnesses. The use of{" "}
+          <strong>Artificial Intelligence </strong> to aid medical professionals
+          with the diagnosis and treatment of Alzheimer's is understood by many
+          to be the future of the managment of the illness.
+          <br></br>
+          <br></br>
+          Furthering this, the FDA have recently approved{" "}
+          <strong>"lecanemab"</strong>, an anti-amyloid antibody. This is used
+          for treating mild cognitive impairment. This approval represents a
+          significant breakthrough in dementia treatment.
+          <br></br>
+          <br></br>
+          Locally in Ireland, the Government announced during September of 2023
+          that there will be <strong>10 new Memory Assessment</strong> and
+          Support Services to be built on the island. This will be located in:
+          Mayo, Sligo, Waterford, Wexford, Cavan/Monaghan, Donegal, Kerry,
+          Limerick, Westmeath, and Galway. For more complicated cases of
+          dementia, new staff are being recruited to the exisiting Regional
+          Specialist Memory Clinics in St. James's Hospital and Tallaght
+          University Hospital.
+        </p>
+      </div>
+      <div
+        className="rounded"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgb(117, 221, 235), rgb(205, 242, 248))",
+          backgroundRepeat: "no-repeat",
+          textAlign: "center",
+          width: "30%",
+          margin: "0 auto",
+          overflow: "auto",
+          marginTop: "3vmax",
+          marginBottom: "2vmax",
+        }}
+      >
+        <h1 style={{ fontSize: "5vmin" }}>Useful Links</h1>
+        <p style={{ fontSize: "3vmin" }}>
+          <a href="https://dementia.ie/"> Demntia Ireland</a>
+          <br></br>
+          <a href="https://alzheimer.ie/about-dementia/"> Alzheimer Ireland</a>
+          <br></br>
+          <a href="https://www.understandtogether.ie/">Understand Together</a>
+          <br></br>
+          <a href="https://www.hse.ie/eng/services/publications/olderpeople/model-of-care-for-dementia-in-ireland.pdf">
+            HSE Information
+          </a>
+        </p>
+      </div>
+    </>
+  );
+}
+
+export default Recent;

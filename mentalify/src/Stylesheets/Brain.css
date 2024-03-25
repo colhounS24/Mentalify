@@ -1,7 +1,7 @@
 /* Brain.css */
 .container1 {
     position: relative;
-    width: 50%;
+    width: 60vmax;
     /* Adjust the width as needed */
     height: auto;
     justify-content: center;

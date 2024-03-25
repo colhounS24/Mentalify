@@ -49,6 +49,7 @@ function Brain() {
           marginBottom: "3rem",
           fontStyle: "italic",
           fontSize: "3vmin",
+          fontWeight: "bold",
         }}
       >
         Click on each button to learn about different parts of the brain

@@ -3,6 +3,7 @@ import NavBar from "../NavBar";
 import Footer from "../Footer";
 import { SubmitHandler, useForm } from "react-hook-form";
 import "../../Stylesheets/Signup.css";
+import { Link } from "react-router-dom";
 
 const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
 console.log(apiUrl);
@@ -33,7 +34,7 @@ function SignUp() {
       });
       if (response.ok) {
         console.log("Data saved successfully");
-        window.location.href = "/login";
+        window.location.href = apiUrl + "/login";
       } else {
         return response.json().then((data) => {
           const errorMessage = data.message;
@@ -191,9 +192,9 @@ function SignUp() {
             >
               {isSubmitting ? "Loading..." : "Create"}
             </button>
-            <a href="/login" className="btn btn-success">
-              Already have an account?
-            </a>
+            <Link to={"/login"}>
+              <a className="btn btn-success">Already have an account?</a>
+            </Link>
           </div>
         </form>
       </div>

@@ -3,6 +3,7 @@ import Footer from "../Footer";
 import Brain from "../Brain";
 import AboutIllnesses from "../AboutIllnesses";
 import MapClinic from "../Map";
+import Recent from "../../Stylesheets/Recent";
 
 function Education() {
   return (
@@ -12,6 +13,7 @@ function Education() {
         <Brain></Brain>
         <AboutIllnesses></AboutIllnesses>
         <MapClinic></MapClinic>
+        <Recent></Recent>
       </div>
       <div className="footer--pin">
         <Footer />
