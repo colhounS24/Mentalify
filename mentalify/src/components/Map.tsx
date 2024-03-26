@@ -12,7 +12,7 @@ function MapClinic() {
               fontWeight: "bold",
             }}
           >
-            Interactive map of clinics in Ireland
+            Interactive map of memory-supporting clinics in Ireland
           </h4>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d838656.5155587634!2d-7.491117947757545!3d53.422939049518895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smemory%20clinic!5e0!3m2!1sen!2sie!4v1708038848623!5m2!1sen!2sie"
@@ -20,8 +20,8 @@ function MapClinic() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             style={{
-              width: "50vmax",
-              height: "50vmax",
+              width: "40vmax  ",
+              height: "40vmax",
               boxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
               WebkitBoxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
               borderRadius: "1%",
@@ -36,8 +36,9 @@ function MapClinic() {
           boxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
           WebkitBoxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
           margin: "0 auto",
-          marginBottom: "4vmin",
+          marginBottom: "10vmin",
           width: "75%",
+          maxHeight: "35vmax",
         }}
       >
         <h4 style={{ fontSize: "5vmin" }}>Help and Available Treatments</h4>

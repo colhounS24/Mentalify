@@ -8,11 +8,12 @@ function Recent() {
             "linear-gradient(to bottom, rgb(117, 221, 235), rgb(205, 242, 248))",
           backgroundRepeat: "no-repeat",
           textAlign: "center",
-          width: "50%",
+          width: "75%",
           margin: "0 auto",
           overflow: "auto",
           boxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
           WebkitBoxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
+          maxHeight: "35vmax",
         }}
       >
         <h1 style={{ fontSize: "5vmin", padding: "2vmin" }}>
@@ -60,7 +61,7 @@ function Recent() {
       >
         <h1 style={{ fontSize: "5vmin" }}>Useful Links</h1>
         <p style={{ fontSize: "3vmin" }}>
-          <a href="https://dementia.ie/"> Demntia Ireland</a>
+          <a href="https://dementia.ie/"> Dementia Ireland</a>
           <br></br>
           <a href="https://alzheimer.ie/about-dementia/"> Alzheimer Ireland</a>
           <br></br>

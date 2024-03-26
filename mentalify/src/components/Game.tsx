@@ -167,7 +167,34 @@ function Game() {
 
   return (
     <div id="wholeContainer">
-      <h1 style={{ fontSize: "8vmin" }}>Match The Cards</h1>
+      <div
+        className="rounded"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgb(117, 221, 235), rgb(205, 242, 248))",
+          backgroundRepeat: "no-repeat",
+          textAlign: "center",
+          margin: "0 auto",
+          overflow: "auto",
+          marginTop: "3vmax",
+          marginBottom: "2vmax",
+          boxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
+          WebkitBoxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
+          width: "75%",
+          padding: "2rem",
+        }}
+      >
+        <h1 style={{ fontSize: "8vmin" }}>Match The Cards</h1>
+        <p style={{ fontSize: "3vmin" }}>
+          Card-matching games have been clinically proven to reduce the rate of
+          cognitive decline and to improve memory capabilities. The aim of this
+          game is to match pairs of cards until all of the cards have been
+          sorted. Each move you take will count as a "turn", the aim is to
+          complete the game in as few turns as possible. When you are ready to
+          begin, press the "New Game" button.<br></br>
+          <strong>Best of luck!</strong>
+        </p>
+      </div>
       <div id="gameContainer">
         <button
           id="newGame"

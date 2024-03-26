@@ -15,7 +15,7 @@ function NavBarLoggedIn() {
       style={{ marginBottom: "20px" }}
     >
       <div className="container-fluid">
-        <Link to={"/"}>
+        <Link to={"/homepage"}>
           <a className="navbar-brand badge text-bg-info " onClick={logOut}>
             Mentalify
           </a>
@@ -32,11 +32,25 @@ function NavBarLoggedIn() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link to={"/homepage"}>
                 <a className="nav-link" aria-current="page">
                   Homepage
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link to={"/education"}>
+                <a className="nav-link" aria-current="page">
+                  Education
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link to={"/training"}>
+                <a className="nav-link" aria-current="page">
+                  Training
                 </a>
               </Link>
             </li>
