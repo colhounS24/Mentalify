@@ -25,12 +25,11 @@ function HomeIntro() {
               How Can Mentalify Help?
             </h6>
             <p className="card-text descrips">
-              Mentalify allows users to assess their current cognitive ability
-              through a test, gauging their ability in various categories.
-              Furthering this, Mentalify promotes training to help users improve
-              and sharpen their cognitive abilities whilst also providing games
-              that can be played against your peers to encourage training
-              together.
+              Mentalify allows for users to play a game that has been
+              clinically-proven to reduce cognitive-decline and improve memory
+              abilities. Users can set their own highscore, compare it with
+              their friends, and then aim to beat it. This encourages users to
+              return to Mentalify and to subconsciously better themselves.
             </p>
           </div>
         </div>
