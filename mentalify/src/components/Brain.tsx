@@ -3,6 +3,7 @@ import { useState } from "react";
 import image1 from "../assets/_removal.ai__2fefe7a6-8fc1-408d-93be-d12e90097429-brain-transformed.png";
 
 interface ExplanationsState {
+  //defining types
   parietal: boolean;
   occipital: boolean;
   cerebellum: boolean;
@@ -12,7 +13,9 @@ interface ExplanationsState {
 }
 
 function Brain() {
+  //main function to return
   const [explanations, setExplanations] = useState<ExplanationsState>({
+    //using useState for state management
     parietal: false,
     occipital: false,
     cerebellum: false,
@@ -22,6 +25,7 @@ function Brain() {
   });
 
   function toggleExplanation(id: keyof ExplanationsState) {
+    //function to toggle the explanations
     setExplanations((prevExplanations) => ({
       ...prevExplanations,
       [id]: !prevExplanations[id],

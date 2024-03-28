@@ -72,6 +72,44 @@ function Recent() {
           </a>
         </p>
       </div>
+      <div
+        className="rounded"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgb(117, 221, 235), rgb(205, 242, 248))",
+          backgroundRepeat: "no-repeat",
+          textAlign: "center",
+          width: "40%",
+          margin: "0 auto",
+          overflow: "auto",
+          marginTop: "3vmax",
+          marginBottom: "2vmax",
+          boxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
+          WebkitBoxShadow: "10px 10px 5px 0px rgba(0, 0, 0,0.55)",
+        }}
+      >
+        <h1 style={{ fontSize: "5vmin" }}>Interesting Papers</h1>
+        <p style={{ fontSize: "3vmin" }}>
+          <a href="https://doi.org/10.1017/IPM.2018.31">
+            {" "}
+            Estimates of the prevalence, incidence and severity of dementia in
+            Ireland.
+          </a>
+          <br></br>
+          <br></br>
+          <a href="https://doi.org/10.1093/GERONA/GLAB043">
+            {" "}
+            Prevalence of Memory-Related Diagnoses Among U.S. Older Adults With
+            Early Symptoms of Cognitive Impairment.
+          </a>
+          <br></br>
+          <br></br>
+          <a href="https://doi.org/10.1159/000363702">
+            The neurobiological bases of memory formation: from physiological
+            conditions to psychopathology.{" "}
+          </a>
+        </p>
+      </div>
     </>
   );
 }

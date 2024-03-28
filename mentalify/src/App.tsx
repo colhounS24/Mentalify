@@ -11,10 +11,11 @@ import Education from "./components/Pages/Education";
 import NotFound from "./components/Pages/NotFound";
 import NewsLetter from "./components/Pages/NewsLetter";
 
-const baseurl = import.meta.env.BASE_URL || "/";
+const baseurl = import.meta.env.BASE_URL || "/"; //deciding which url to use, this is importing when hosting on the server.
 
 function App() {
   return (
+    //these are the routes that load the various pages of the website depending on which url the user uses.
     <BrowserRouter basename={baseurl}>
       <Routes>
         <Route path="" element={<Landing></Landing>}></Route>

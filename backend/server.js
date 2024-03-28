@@ -216,7 +216,7 @@ app.post('/api/forgot', async (req, res) => {
     
     const existingUser = await LoginModel.findOne({ email });
 
-    const randomNumber = Math.floor(100000 + Math.random() * 900000);
+    const randomNumber = Math.floor(100000 + Math.random() * 900000); //random 6 digit code
 
     existingUser.code = randomNumber;
 
@@ -225,8 +225,8 @@ app.post('/api/forgot', async (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: 'mentalifyfyp@gmail.com', // Your email address
-        pass: 'uyge ktyq ndjg zbyw' // Your email password
+        user: 'mentalifyfyp@gmail.com', //email address
+        pass: 'uyge ktyq ndjg zbyw' //email password
       }
     });
 

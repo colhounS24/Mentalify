@@ -14,6 +14,7 @@ const apiUrl = import.meta.env.BASE_URL || "http://localhost:5000";
 var checker = 0;
 
 interface Card {
+  //defining types
   src: string;
   id: number;
   matched: boolean;
@@ -24,6 +25,7 @@ interface Choice {
 }
 
 const cardImages: Card[] = [
+  //storing cards in array using predefined types
   { src: card1, id: 1, matched: false },
   { src: card2, id: 2, matched: false },
   { src: card3, id: 3, matched: false },

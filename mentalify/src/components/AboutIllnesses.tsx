@@ -170,7 +170,7 @@ function AboutIllnesses() {
               personality, behaviour, and language function. Some cases of FTD
               are linked to motor neurone disease. With FTD, the early symptoms
               vary, depending on which part of the brain is affected. These
-              symtpoms can include: changes in personality, changes in eating
+              symptoms can include: changes in personality, changes in eating
               patterns, lack of personal awareness, lack of social awareness,
               and difficulties speaking and understanding others. It is more
               common in younger people, aged between 45-65
